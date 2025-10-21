@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "MeetingEvent",
+  "namespace": "com.collaborate.stream.events",
+  "fields": [
+    {"name": "event_id", "type": "string"},
+    {"name": "meeting_id", "type": "string"},
+    {"name": "event_type", "type": "string"},
+    {"name": "latency_ms", "type": ["null", "int"], "default": null},
+    {"name": "packet_loss", "type": ["null", "float"], "default": null},
+    {"name": "timestamp", "type": "long"}
+  ]
+}
